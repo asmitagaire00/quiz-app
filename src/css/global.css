@@ -1,0 +1,77 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Titillium Web', sans-serif;
+  /* set base font-size: 10px (1rem == 10px), easier, eg: 2.1rem == 21px */
+  font-size: 62.5% !important;
+
+  /* BREAKPOINTS: 480px(30em), 768px(48em), 1024px(64em), 1200px(75em) */
+  /* NOTE: for @media queries, 1em == 16px, since they are not affected by changes in font-size in html */
+}
+
+:root {
+  --margin-s: 0.3rem;
+  --margin-m: 0.5rem;
+  --margin-l: 0.8rem;
+  --margin-default: 1rem;
+  --margin-xl: 1.3rem;
+  --margin-xxl: 2.1rem;
+  --margin-page: 3.3rem;
+
+  --padding-s: 0.3rem;
+  --padding-m: 0.5rem;
+  --padding-l: 0.8rem;
+  --padding-default: 1rem;
+  --padding-xl: 1.2rem;
+  --padding-xxl: 2.1rem;
+
+  --font-s: 1rem;
+  --font-default: 1.6rem;
+  --font-m: 2rem;
+  --font-l: 2.5rem;
+
+  --color-primary: #e44232;
+  --color-primary-0: #f9efee;
+  --color-secondary: #f9f7f7;
+
+  --color-gray: #eee;
+  --color-gray-light: #f5f5f5;
+  --color-gray-dark: rgb(139, 139, 139);
+  --color-red: #ff0000;
+  --color-yellow: #ffd700;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-green: rgb(8, 202, 8);
+  --color-error: #cc0000;
+}
+
+body {
+  font-size: var(--font-default) !important;
+  background-color: var(--color-gray-light);
+  line-height: 1.5rem;
+}
+
+h1 {
+  margin: var(--margin-xxl) 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  font-size: var(--font-default);
+  padding: var(--padding-xl);
+  margin: var(--margin-m) 0;
+  border: 2px solid var(--color-black);
+  border-radius: 0;
+}

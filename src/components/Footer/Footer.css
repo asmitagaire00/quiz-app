@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  text-align: center;
+  background-color: rgb(204, 223, 223);
+  padding: 10px;
+  bottom: 0px;
+}
